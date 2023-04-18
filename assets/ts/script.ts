@@ -8,4 +8,6 @@ let weather = new OpenWeatherAPI({
     units: "imperial"
 });
 
-weather.getCurrent
+function displayTemp(){
+    weather.getCurrent().then((value) => {alert(value)});
+}
